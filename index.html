@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Bookmarks App</title>
+</head>
+
+<body>
+  <header>
+    <h1>Garrett's Bookmarks App</h1>
+    <section class="main-controls">
+      <input type="button" value="Add" class="main-controls-add-button">
+      <select id="main-controls-filter-select">
+        <option value="-1">Minimum Rating</option>
+        <option value="1">★ - 1 star</option>
+        <option value="2">★★ - 2 stars</option>
+        <option value="3">★★★ - 3 stars</option>
+        <option value="4">★★★★ - 4 stars</option>
+        <option value="5">★★★★★ - 5 stars</option>
+      </select>
+    </section>
+  </header>
+
+  <main class="content-view"></main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/store.js"></script>
+  <script src="scripts/bookmarks.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

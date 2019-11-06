@@ -1,0 +1,164 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header,
+.content-view {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-view {
+  width: 90%;
+  padding-top: 120px;
+  max-width: 640px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.99);
+  padding-bottom: 20px;
+}
+
+[hidden] {
+  display: none;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.bookmark-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.bookmark-list-item {
+  border: 1.5px solid rgb(90, 90, 90);
+  margin: 7px 0;
+  padding: 1px;
+}
+
+#new-bookmark-form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#new-bookmark-form {
+  position: relative;
+  border: 1px solid black;
+  margin-top: -20px;
+}
+
+#new-bookmark-form fieldset {
+  border: none;
+  padding-bottom: 0;
+}
+
+#new-bookmark-form fieldset input {
+  width: 100%;
+}
+
+.form-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 7.5px;
+}
+
+.bookmark-list-item-condensed-view {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0;
+}
+
+.bookmark-list-item-expanded-view {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 20px;
+}
+
+.condensed-view-title,
+.expanded-view-title {
+  width: 70%;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.condensed-view-rating,
+.expanded-view-rating {
+  margin: auto;
+  text-align: center;
+}
+
+.expanded-view-url,
+.expanded-view-desc {
+  padding: 23px;
+  background-color: rgb(250, 250, 250);
+  width: 100%;
+}
+
+break {
+  flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.expanded-view-controls,
+.form-controls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.expanded-view-controls button {
+  width: 100px;
+  margin: 5px;
+  font-variant: small-caps;
+}
+
+.bookmark-controls-add-button {
+  width: 100px;
+  font-variant: small-caps;
+}
+
+.form-reset-button,
+.form-submit-button {
+  margin: 5px;
+  font-variant: small-caps;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 5px;
+}
+
+select {
+  height: 25px;
+}
+
+#bookmark-controls-filter-select {
+  font-size: 12px;
+}
+
+.expanded-view-controls-edit-button {
+  display: none;
+}
